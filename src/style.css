@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+.app {
+  margin: 50px auto;
+  max-width: 60%;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 10px;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px 10px 0 0;
+}
+.header--title {
+  font-size: 42px;
+  color: #658ec6;
+}
+.github {
+  display: flex;
+  align-items: center;
+}
+.github--image {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+.github--link {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+  color: #658ec6;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #658ec6;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.35s;
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: all 0.35s;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #658ec6;
+}
+
+button:hover:after {
+  width: 100%;
+}
+
+.form--input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+}
+input[type="text"]:focus {
+  /* background:  */
+  /* border-style: none; */
+}
+
+.meme {
+  margin-top: 30px;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.meme--image {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 2.5em;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
