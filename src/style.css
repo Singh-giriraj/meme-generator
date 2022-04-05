@@ -60,7 +60,7 @@ main {
 
 .form {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: repeat(2, clamp(200px, 250px, 300px));
   grid-template-rows: 40px 50px;
   column-gap: 30px;
   row-gap: 35px;
@@ -227,6 +227,15 @@ button:hover:after {
 
   .meme--text {
     font-size: 2rem;
+  }
+  .HowTo {
+    padding: 20px;
+  }
+  .HowTo > h1 {
+    font-size: 28px;
+  }
+  .HowTo > p {
+    font-size: 18px;
   }
 }
 
