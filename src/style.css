@@ -187,7 +187,6 @@ button:hover:after {
   .app {
     margin: 10px auto;
     width: 95%;
-    height: 95%;
   }
   .header {
     flex-direction: column;
@@ -263,6 +262,9 @@ button:hover:after {
   }
   .github--link {
     font-size: 16px;
+  }
+  .meme {
+    width: 90%;
   }
   .HowTo {
     padding: 18px;
