@@ -8,9 +8,10 @@ body {
   font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
+
 .app {
   margin: 50px auto;
-  max-width: 60%;
+  width: 60%;
   background: white;
   background: linear-gradient(
     to right bottom,
@@ -178,4 +179,72 @@ button:hover:after {
   font-weight: 500;
   text-decoration: 2px underline;
   text-underline-offset: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    margin: 10px;
+    width: 100%;
+    align-self: center;
+  }
+  .header {
+    flex-direction: column;
+    height: 80px;
+    padding: 12px;
+  }
+  .header--title {
+    font-size: 22px;
+  }
+  .github {
+    justify-content: end;
+  }
+  .github--image {
+    width: 18px;
+    margin-right: 5px;
+  }
+  .github--link {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 25px;
+  }
+
+  .form {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 40px 50px;
+    row-gap: 20px;
+  }
+  .form--input {
+    font-size: 16px;
+  }
+
+  .meme {
+    margin-top: 15px;
+    width: 95%;
+  }
+
+  .meme--text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .app {
+    margin: 40 auto;
+    width: 80%;
+  }
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header--title {
+    font-size: 28px;
+  }
+  .github--image {
+    width: 20px;
+  }
+  .github--link {
+    font-size: 16px;
+  }
 }

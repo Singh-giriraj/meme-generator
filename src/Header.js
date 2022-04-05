@@ -12,7 +12,7 @@ export default function Header() {
           alt="icon"
         />
         <a className="github--link" href="https://github.com/Singh-giriraj">
-          &copy;Singh-Giriraj
+          @Singh-giriraj
         </a>
       </div>
     </header>
