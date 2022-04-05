@@ -11,6 +11,7 @@ body {
 
 .app {
   margin: 50px auto;
+  align-self: center;
   width: 60%;
   background: white;
   background: linear-gradient(
@@ -60,7 +61,7 @@ main {
 
 .form {
   display: grid;
-  grid-template-columns: repeat(2, clamp(200px, 250px, 300px));
+  grid-template-columns: repeat(2, clamp(200px, 300px, 320px));
   grid-template-rows: 40px 50px;
   column-gap: 30px;
   row-gap: 35px;
@@ -165,27 +166,28 @@ button:hover:after {
   color: #658ec6;
   text-align: center;
   padding: 40px;
-  line-height: 50px;
 }
 .HowTo > h1 {
   font-size: 32px;
   text-transform: capitalize;
+  margin-bottom: 35px;
 }
 .HowTo > p {
   text-transform: capitalize;
   font-size: 22px;
+  line-height: 30px;
 }
 .HowTo > p > span {
   font-weight: 500;
   text-decoration: 2px underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 4px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .app {
-    margin: 10px;
-    width: 100%;
-    align-self: center;
+    margin: 10px auto;
+    width: 95%;
+    height: 95%;
   }
   .header {
     flex-direction: column;
@@ -212,9 +214,10 @@ button:hover:after {
 
   .form {
     width: 90%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px;
     grid-template-rows: 40px 40px 50px;
     row-gap: 20px;
+    justify-content: center;
   }
   .form--input {
     font-size: 16px;
@@ -233,27 +236,43 @@ button:hover:after {
   }
   .HowTo > h1 {
     font-size: 28px;
+    margin-bottom: 10px;
   }
   .HowTo > p {
     font-size: 18px;
+    line-height: 26px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 599px) and (max-width: 1023px) {
   .app {
-    margin: 40 auto;
+    margin: 40px auto;
     width: 80%;
   }
   .form {
     grid-template-columns: 1fr 1fr;
   }
+  .form--input {
+    font-size: 15px;
+  }
   .header--title {
-    font-size: 28px;
+    font-size: 34px;
   }
   .github--image {
     width: 20px;
   }
   .github--link {
     font-size: 16px;
+  }
+  .HowTo {
+    padding: 18px;
+  }
+  .HowTo > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .HowTo > p {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
